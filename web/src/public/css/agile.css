@@ -1,0 +1,71 @@
+:root {
+  --ttt-color:rgb(255, 255, 255); 
+  --primary-color: #ff9368;
+  --accent-color: rgba(231, 109, 90, 1);
+  --accent-color-dark: rgba(226, 77, 54, 1);
+  --dark-color: rgb(247, 39, 2);
+  --light-color: rgb(255 255 255);
+  --page-color: #ff9368;
+  --margin-xxl: 3rem;
+  --margin-xl: 2rem;
+  --margin-lg: 1rem;
+  --margin-med: 0.66rem;
+  --margin-sm: 0.33rem;
+  --base-font-size: 16pt;
+  --border-radius: 6px;
+  --rounded-radius: 4rem;
+  --padding-xxl: 2rem;
+  --padding-xl: 1.4rem;
+  --padding-lg: 1rem;
+  --padding-med: 0.66rem;
+  --padding-sm: 0.33rem;
+  --font: Cursive;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: calc(1rem + 1vw);
+  background: var(--page-color);
+  margin: 0px;
+  font-family: var(--font);
+}
+p, ol li, ul li {
+  color: var(--light-color);
+  font-size: calc(0.8rem + 1vw);
+}
+
+h1 {
+  font-size: calc(1rem + 3.5vw);
+  background-color: var(--accent-color);
+  color: var(--ttt-color); 
+  padding: var(--padding-lg) var(--padding-xl);
+  margin: var(--margin-lg) auto;
+}
+h2 {
+  font-size: calc(1rem + 2.7vw);
+  color:var(--ttt-color); 
+  font-family: Cursive;
+}
+h3 {
+  font-size: calc(1rem + 2.1vw);
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: separate;
+  width: 100%;
+}
+table th {
+  background: var(--dark-color-alt);
+  color: #ffffff;
+}
+table th, table td {
+  margin: 2px;
+  text-align: center;
+  padding: var(--padding-med);
+  border: 2px solid #762500;
+}
+table tr:nth-child(odd) {
+  background-color: #e76225;
+}

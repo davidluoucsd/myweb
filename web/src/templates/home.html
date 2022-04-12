@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ 
+    <title>Junzhe Luo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+</head>
+
+
+<body>
+
+    <h1>Junzhe Luo</h1>
+    <img src="ch1.jpg" width="200">
+
+    <p> Hello! My name is Junzhe Luo. and I am a EE
+        student from LA. I like working out, playing video game and watching movies </p>
+    <p> Do you know Ju Tsuki Ryu Ninja Samurai Warrior <a
+            href="https://www.linkedin.com/in/ramsin-khoshabeh-a168a97/"> Prof. Ramsin Khoshabeh</a> and <a
+            href="https://www.linkedin.com/in/rgessner/">Prof. Rick Gessner</a>? They will tell me more about you in the
+        coming weeks.</p>
+
+    <hr>
+
+
+    
+    <h2>About our Project</h2>
+    <li><a href="https://docs.google.com/document/d/1nuLcLTN9wi0ilVmAMYD3JICmJmE8iW7IbqbmBFI0B8U/edit"
+      target="_blank">Check this out!</a></li>
+
+        <h2>Here is my Team</h2>
+
+    
+        <table class='margin-top-xl'>
+            <thead>
+                <tr>
+                    <th class='small'> First Name </th>
+                    <th class='medium'> Last Name </th>
+                    <th class='large'> Email </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td> {{user[0]}} </td>
+                    <td> {{user[1]}} </td>
+                    <td> {{user[2]}} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+        <hr>
+        <p><i>Contact Me: </i></p>
+
+    
+        <ul>
+            <li><a href="https://www.ece.ucsd.edu/"
+                    target="_blank">ECE UCSD Homepage</a></li>
+
+            <li><a
+                    href="mailto: j5luo@ucsd.edu?subject=Hello" target="_blank">My Email address</a></li>
+
+        </ul>
+
+        <a href="https://github.com/davidluoucsd" target="_blank"><img src="git.png" alt="myGithub"
+                style="width:42px;height:42px;"></a>
+        <a href="https://ucsd.edu/" target="_blank"><img src="ucsd.png" alt="mySchool"
+                style="width:140px;height:42px;"></a>
+
+</body>
+</html>
