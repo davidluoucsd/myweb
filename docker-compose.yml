@@ -6,12 +6,12 @@ services:
     build:
       context: ./web
     ports:
-      - 6544:6000 # host : container
+      - 6543:6001 # host : container
     env_file:
       ./credentials.env
     volumes:
       - ./web/src:/app
-    container_name: gg-web
+    container_name: tb-web
 
   db-server:
     image: mysql:latest
@@ -22,7 +22,7 @@ services:
       - 3303:3306 # host : container
     volumes:
       - ./db:/var/lib/mysql # persistent DB when container is stopped
-    container_name: gg-db
+    container_name: tb-db
 
 volumes:
   db:
