@@ -24,6 +24,29 @@
 * {
   box-sizing: border-box;
 }
+aside{
+  color: aliceblue;
+  border: 2px solid rgba(231, 109, 90, 1);
+  margin-bottom:2rem;
+  padding: 2rem;
+}
+section{
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width:2000px) {
+  section{
+    font-size:2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:1rem;
+  }
+  
+}
+hr{
+  border-top: 1px solid red;
+}
 body {
   font-size: calc(1rem + 1vw);
   background: var(--page-color);
@@ -33,6 +56,16 @@ body {
 p, ol li, ul li {
   color: var(--light-color);
   font-size: calc(0.8rem + 1vw);
+  
+}
+.why1{
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:1rem;
+}
+.why{
+  text-align: center
 }
 
 h1 {
@@ -44,12 +77,25 @@ h1 {
 }
 h2 {
   font-size: calc(1rem + 2.7vw);
-  color:var(--ttt-color); 
-  font-family: Cursive;
+  background-color: rgb(214, 110, 68);
+  color: var(--ttt-color); 
+  padding: var(--padding-lg) var(--padding-xl);
+  margin: var(--margin-lg) auto;
 }
 h3 {
+  color: rgb(245, 224, 224);
   font-size: calc(1rem + 2.1vw);
 }
+h4 {
+  color: rgb(49, 46, 46);
+  font-size: calc(1rem + 1.9vw);
+}
+.why2 {
+  text-align: center;
+  color: aliceblue;
+  background-color: rgb(211, 125, 55);
+}
+
 
 table {
   table-layout: fixed;

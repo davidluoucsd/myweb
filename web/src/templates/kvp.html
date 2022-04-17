@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ 
+    <title>Pill Care</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ljz.css">
+</head>
+
+
+<body>
+
+    <h1>Pill Care KVP</h1>
+    <h2 class="why">The Key Value Proposition</h2>
+    <section class="why">   
+        <aside>
+            <p>Our</p>
+        </aside>
+        <aside>
+            Pill Care 
+        </aside>
+        <aside>
+            helps
+        </aside>
+        <aside>
+            family who have elders
+        </aside>
+        <aside>
+            who want
+        </aside>
+        <aside>
+            to take correct pills on time regularly
+        </aside>
+        <aside>
+           by
+        </aside>
+        <aside>
+            reminding elders to take correct type and amount of pill using customized family members' voice records
+        </aside>
+        <aside>
+            and
+        </aside>
+        <aside>
+            give the family a chance to bond the youngs and elders
+        </aside>
+        <aside>
+            unlike
+        </aside>
+        <aside>
+            HERO, Script talk, and CVS's App.
+        </aside>
+    </section>
+    <hr>
+    <h2 class="why">why you choose us</h2>
+    <section class="why1 why">   
+        <aside>
+            <img src="b1.png" width="80">Exchange pill bottle’s cap and set up voice recording
+        </aside>
+        <aside>
+            <img src="b2.png" width="100">Alarm at set time
+        </aside>
+        <aside>
+            <img src="b4.png" width="100">Customized voicing
+        </aside>
+        <aside>
+            <img src="b5.png" width="100">Detect whether the pill bottle is correct or not</p>
+        </aside>
+    </section>
+
+    <hr>
+      <h2>Check this for more information</h2>
+      <li>Here is our video!</li>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eaYg_9yNvOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2 class="why">Here is my Team</h2>
+
+    
+        <table class='margin-top-xl'>
+            <thead>
+                <tr>
+                    <th class='small'> First Name </th>
+                    <th class='medium'> Last Name </th>
+                    <th class='large'> Email </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td> {{user[0]}} </td>
+                    <td> {{user[1]}} </td>
+                    <td> {{user[2]}} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+        <hr>
+        <p><i>Contact Me: </i></p>
+
+    
+        <ul>
+            <li><a href="https://www.ece.ucsd.edu/"
+                    target="_blank">ECE UCSD Homepage</a></li>
+
+            <li><a
+                    href="mailto: j5luo@ucsd.edu?subject=Hello" target="_blank">My Email address</a></li>
+
+        </ul>
+
+        <a href="https://github.com/davidluoucsd" target="_blank"><img src="git.png" alt="myGithub"
+                style="width:42px;height:42px;"></a>
+        <a href="https://ucsd.edu/" target="_blank"><img src="ucsd.png" alt="mySchool"
+                style="width:140px;height:42px;"></a>
+
+</body>
+</html>
